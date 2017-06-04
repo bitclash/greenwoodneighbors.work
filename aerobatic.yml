@@ -2,15 +2,15 @@ id: 63cb23ca-a77d-4dca-9d0b-c3d91dbd0dab
 deploy:
   ignore: []
   directory: _site
-plugins:
-  - name: form-submit
-    path: /contact-us
-    method: post
-    options:
-      formName: contact-us
-      redirectUrl: /thank-you
-      recaptchaSecret: $RECAPTCHA_SECRET_KEY
-      targets:
-        - name: webhook
-          url: $ZAP_GSHEET_WEBHOOK_URL
+# plugins:
+#   - name: form-submit
+#     path: /contact-us
+#     method: post
+#     options:
+#       formName: contact-us
+#       redirectUrl: /thank-you
+#       recaptchaSecret: $RECAPTCHA_SECRET_KEY
+#       targets:
+#         - name: webhook
+#           url: $ZAP_GSHEET_WEBHOOK_URL
   - name: webpage
