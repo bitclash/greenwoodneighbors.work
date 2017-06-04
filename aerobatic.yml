@@ -1,9 +1,8 @@
-id: 1b617ee5-2710-41bc-bd38-82db5d62a53d
+id: 63cb23ca-a77d-4dca-9d0b-c3d91dbd0dab
 deploy:
   ignore: []
   directory: _site
 plugins:
-  - name: webpage
   - name: form-submit
     path: /contact-us
     method: post
@@ -14,6 +13,4 @@ plugins:
       targets:
         - name: webhook
           url: $ZAP_GSHEET_WEBHOOK_URL
-        # - name: email
-        #   subject: Greenwood Neighborhood Works
-        #   recipients: [erin.lynch@icloud.com, aaroncooke@gmail.com]
+  - name: webpage
